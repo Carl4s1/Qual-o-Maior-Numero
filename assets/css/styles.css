@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  font-size: 1.875rem;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ==== Variaveis === */
+
+:root {
+  --primary-color: hsl(191, 100%, 45%);
+  --color-button: hsl(184, 100%, 52%);
+}
+/* ===== Fonts ====== */
+.title {
+  font-family: "Poppins", sans-serif;
+}
+
+.subtitle {
+  font-family: "Open Sans", sans-serif;
+}
+
+/*====== Pergunta =====*/
+
+.main {
+  height: 3.4375rem;
+  margin: 4rem 1.875rem 1.875rem;
+  padding: 3rem;
+
+  background: var(--primary-color);
+
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 15px;
+  border: solid 2px black;
+
+  cursor: default;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/*========= Formulário =======*/
+form input,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+
+  border: 2px solid black;
+}
+
+form input {
+  height: 3.25rem;
+  font-size: 1.125rem;
+  border-radius: 90px;
+  max-width: 271px;
+  text-align: center;
+}
+
+input:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+button#button,
+input#num,
+input {
+  margin: 0 auto;
+  margin-bottom: 1.25rem;
+}
+
+input::placeholder {
+  text-align: center;
+  color: hsl(0, 0, 47%);
+}
+
+input:focus::placeholder {
+  color: white;
+}
+
+button {
+  height: 3.25rem;
+  max-width: 167px;
+  border-radius: 90px;
+
+  font-size: 1.125rem;
+  font-weight: bold;
+  background-color: var(--color-button);
+
+  cursor: pointer;
+}
+
+button:hover {
+  background: hsl(198, 100%, 43%);
+  transform: scale(0.9);
+  transition: all 0.5s;
+}
+
+/*==== Resultado ====*/
+#resultado {
+  margin: 0 auto;
+  margin-bottom: 5.5rem;
+  max-width: 271px;
+  height: 3.25rem;
+
+  font-size: 1.125rem;
+  font-family: "Open Sans", sans-serif;
+
+  display: table;
+  vertical-align: middle;
+}
+
+.correto {
+  background: hsl(137, 98%, 68%);
+  border-radius: 90px;
+  text-align: center;
+}
+
+.errado {
+  background: hsl(360, 95%, 68%);
+  border-radius: 90px;
+  text-align: center;
+}
+
+/*=== Footer ===*/
+
+footer {
+  height: 8.3125rem;
+  background: var(--primary-color);
+}
+
+footer p {
+  margin-top: 1.25rem;
+  margin-bottom: 1.75rem;
+
+  font-size: 0.875rem;
+}
+
+footer a {
+  transition: 0.3s;
+  display: inline-block;
+}
+
+footer a:hover {
+  transform: translateY(-15px);
+}
+
+.container-footer {
+  margin: 1.875rem;
+}
+
+footer div div {
+  color: #ffffff;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+div p {
+  cursor: default;
+}
+
+div.container-footer div p:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.socials i {
+  margin-right: 1.7rem;
+}
+
+.projects i {
+  margin-left: 1.7rem;
+}
+
+div.div-1 p {
+  cursor: default;
+}
+
+/*========== Media Queries ==========*/
+/*========== Tablet ==========*/
+@media (min-width: 768px) {
+  .section {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main {
+    height: 31.875rem;
+    width: 17.75rem;
+    margin: 8.125rem 3.75rem 11.5rem 1.875rem;
+    padding: 1rem;
+
+    background: var(--primary-color);
+
+    border-radius: 15px;
+    border: solid 2px black;
+
+    cursor: default;
+  }
+
+  .main h1 {
+    font-size: 1.5rem;
+  }
+
+  #form {
+    margin-top: 8.375rem;
+    width: 22.75rem;
+  }
+
+  /*======= Questôes ======*/
+
+  form input,
+  #resultado {
+    margin: 1.25rem auto;
+    width: 22.75rem;
+    max-width: 334px;
+
+    margin-right: 1.875rem;
+  }
+
+  form input#num1 {
+    margin-top: 1.1rem;
+    font-size: 1.5rem;
+    height: 4.375rem;
+  }
+
+  form input#num2 {
+    margin-top: 1.1rem;
+    height: 4.375rem;
+    font-size: 1.5rem;
+  }
+
+  form input#num3 {
+    margin-top: 1.1rem;
+    height: 4.375rem;
+    font-size: 1.5rem;
+  }
+
+  form button#button {
+    margin-top: 1.1rem;
+    height: 4.375rem;
+    font-size: 1.5rem;
+  }
+
+  /*======= Resultado ======*/
+
+  form div#resultado {
+    margin-top: 1.1rem;
+  }
+
+  .correto {
+    padding: 0.25rem;
+  }
+
+  .errado {
+    padding: 0.25rem;
+  }
+
+  div#resultado p {
+    font-size: 1.5rem;
+  }
+
+  /*======= Footer ======*/
+
+  footer {
+    height: 12.5rem;
+  }
+
+  footer p {
+    margin-bottom: 2.75rem;
+
+    font-size: 1.5rem;
+  }
+
+  i {
+    font-size: 2.5rem;
+  }
+
+  .socials i {
+    margin-right: 3.875rem;
+  }
+
+  .projects i {
+    margin-left: 3.875rem;
+  }
+}
+
+/*========== Desktop ==========*/
+@media (min-width: 1200px) {
+  .main {
+    height: 31.875rem;
+    width: 17.75rem;
+    margin: 6.125rem 3.75rem 7.5rem 7.875rem;
+    padding: 1rem;
+  }
+
+  form input,
+  #resultado {
+    margin: 1.25rem auto;
+    width: 25.75rem;
+    max-width: 900px;
+
+    margin-left: 10rem;
+    margin-right: 1.875rem;
+  }
+
+  form button#button {
+    margin-left: 18rem;
+  }
+}
