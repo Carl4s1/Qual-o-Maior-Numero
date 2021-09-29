@@ -161,6 +161,10 @@ div.projects {
 }
 
 @media (min-width: 768px) {
+     section {
+        height: 51.5rem;
+    }
+
     .section {
         display: flex;
     }
