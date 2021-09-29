@@ -11,6 +11,7 @@ html {
 
 section {
     width: 100vw;
+    height: 100vh;
     margin-bottom: 5.5rem;
 }
 
@@ -161,6 +162,11 @@ div.projects {
 }
 
 @media (min-width: 768px) {
+    section {
+        margin-bottom: 0;
+    }
+    
+
     .section {
         display: flex;
     }
