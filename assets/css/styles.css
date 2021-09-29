@@ -122,7 +122,7 @@ footer {
 }
 
 footer .title {
-    font-size: 13px;
+    font-size: 12px;
     color: #ffffff;
 }
 
@@ -149,11 +149,11 @@ footer p:hover{
 
 
 a {
-    margin-right: 2rem;
+    margin-right: 1.7rem;
     
     color: #ffffff;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 23px;
 }
 
 div.projects {
@@ -209,3 +209,4 @@ div.projects {
     }
     
 }
+
