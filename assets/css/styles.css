@@ -162,11 +162,6 @@ div.projects {
 }
 
 @media (min-width: 768px) {
-    section {
-        margin-bottom: 0;
-    }
-    
-
     .section {
         display: flex;
     }
