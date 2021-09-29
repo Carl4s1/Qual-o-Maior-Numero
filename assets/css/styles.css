@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main {
+    height: 6.25rem;
+    width: 19.7rem;
+    margin: 4rem auto 1.875rem;
+    
+    background: hsl(191, 100%, 45%);
+    border: black 2px solid;
+    border-radius: 15px;
+    font-size: 12px;
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.main h1{
+    height: auto;
+    width: 90%;
+
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input:hover,
+button:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }  
+
+input:focus {
+    outline: 0;
+}
+
+input:focus::placeholder {
+    color: #ffffff;
+}
+
+form input {
+    height: 3.4rem;
+    width: 16.9rem;
+    margin: 0.625rem auto;
+
+    text-align: center;
+    font-size: 18px;
+
+    border: black 2px solid;
+    border-radius: 90px;
+}
+
+form input::placeholder{
+    font-size: 18px;
+    color: hsl(0, 0%, 47%);
+}
+
+button:hover{
+    background: hsl(198, 100%, 43%);
+}
+
+form button {
+    height: 2.4rem;
+    width: 10.5rem;
+    margin: 0.625rem auto;
+
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+
+    background: hsl(184, 100%, 52%);
+
+    border: black 2px solid;
+    border-radius: 90px;
+}
+
+#resultado {
+    width: 17rem;
+    height: 3.4rem;
+    margin: 0 auto;
+
+    font-family: "Open Sans";
+    text-align: center;
+}
+
+.correto {
+    background: hsl(137, 98%, 68%);
+    border-radius: 90px;
+    font-size: 18px;
+    padding: 0.2rem;
+}
+
+.errado {
+    background: hsl(360, 95%, 68%);
+    border-radius: 90px;
+    font-size: 18px;
+}
+
+footer {
+    height: 8.5rem;
+    width: 100vw;
+    background: hsl(191, 100%, 45%);
+}
+
+footer .title {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+footer div {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    margin: 1.5rem 2.1rem;
+}
+
+footer p:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.icons {
+    margin: 0 2.5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+a {
+    margin-right: 2rem;
+    
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+div.projects {
+    margin-right: -2rem;
+}
+
+@media (min-width: 768px) {
+    .section {
+        display: flex;
+    }
+
+    .main {
+        width: 17.75rem;
+        height: 31.875rem;
+        margin: auto auto;
+
+        font-size: 18px;
+    }
+
+    form {
+        margin: auto auto;
+    }
+
+    form input {
+        height: 3.775rem;
+        width: 22.75rem;
+        margin: 0.98rem auto;
+
+        font-size: 24px;
+    }
+
+    #resultado {
+        width: 22.75rem;
+        margin: 0.98rem auto;
+
+        align-items: center;
+
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 3.1;
+    }
+
+    .correto, .errado {
+        height: 3.775rem;
+    }
+
+    footer .title {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 30px;
+    }
+    
+}
