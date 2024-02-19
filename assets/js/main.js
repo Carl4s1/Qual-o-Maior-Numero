@@ -22,7 +22,7 @@ form.addEventListener('submit', function (e) {
     }
 
     if (!num3) {
-        setResultado('Ops! Algo deu errado! Tente digita números.', false);
+        setResultado('Ops! Algo deu errado! Tente digitar números.', false);
         return;
     }
 
